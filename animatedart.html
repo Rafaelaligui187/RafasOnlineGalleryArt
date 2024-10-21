@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated art</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+     
+    <div id="sidebar">
+        <text id="webname">Rafa's Art</text>
+        <img id="profile" src=".//Rafael.jpg">
+        <text id="fullname">Rafael Landero Aligui</text>
+        
+        <nav>
+            <ul>
+                <li id="containIcon"><!-- Social icons with Links-->
+                    <a href="https://www.youtube.com/@rafaelaligui3058">
+                        <img id="socialicons" src="./icons/youtube.png">
+                    </a>
+                    <a href="https://www.facebook.com/RafaelL.AliguiDotaID414855942">
+                        <img id="socialicons" src="./icons/facebook.png"/>
+                    </a>
+                    <a href="https://www.instagram.com/rafaelaligui187/">
+                        <img id="socialicons" src="./icons/instagram.png"/>
+                    </a>
+                </li>
+                    <li>
+                        <a id="menutext"href="index.html">Art gallery</a>
+                    </li>
+                    <li>    
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="gallery">
+        <!-- Add more Art with optional YouTube links -->
+        <div class="gallery-item">
+            <img src=".//DigitalArts/BlueSky.jpg" alt="Blue Sky" class="art-image" data-date="August 24, 2023" data-video="https://www.youtube.com/embed/cRJZVx4PO0k">
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Suburban.jpg" alt="Suburban" class="art-image" data-date="March 25, 2024" data-video="https://www.youtube.com/embed/o8fc9aK4Doo">
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Stairs.jpg" alt="Stairs" class="art-image" data-date="August 16, 2023" data-video="https://www.youtube.com/embed/t03ULKcdzug">
+        </div>    
+    </div>
+    
+    
+        
+        
+        
+    </div>
+
+    <!-- Modal to display large image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <button id="prevBtn" class="modal-button">&#10094;</button> <!-- Left Arrow -->
+        <button id="nextBtn" class="modal-button">&#10095;</button> <!-- Right Arrow -->
+    </div>
+
+    <script src="scriptVidplayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#fullname{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3d4142;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#infobox {
+    background-color: rgb(156, 213, 247);
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    padding: 50px; /* Adds space inside the box */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    color: rgb(0, 0, 0); /* Text color for contrast */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    size: auto;
+    flex: 1 0 140px;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    min-width: 200px; /* Ensures minimum width for sidebar */
+    height: 100vh;
+    background-color: #d1e7f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center; /* Centers content in the sidebar */
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+}
+
+
+body {
+    background-color: #e2efff;
+}
+
+#logo {
+    font-size: 32px; /* Reduced font size for better fit on smaller screens */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Gallery Grid */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    padding: 20px;
+    margin-left: 25%; /* Push gallery to the right of the sidebar */
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-item {
+    position:relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.gallery-text span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.modal-button {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Profile Picture */
+#profile {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+    border-radius: 100%;
+    margin-bottom: 20px; /* Space between profile image and rest of the content */
+}
+
+/* Social Icons */
+#containIcon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#socialicons {
+    width: 25px;
+    align-self: center;
+    padding: 5px;
+    
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #profile {
+        height: 100px;
+        width: 100px;
+    }
+
+    #gallery {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    #logo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sidebar {
+        flex-direction: column;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Makes items smaller for mobile */
+        padding: 10px;
+    }
+
+    #profile {
+        height: 80px;
+        width: 80px;
+    }
+}
+#menutext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#webname{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: expanded;
+    font-variant: small-caps;
+}

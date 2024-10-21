@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafa's Online Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <span id="webname">Rafa's Art</span>
+        <img id="profile" src=".//Rafael.jpg" alt="Rafael's Profile">
+        <span id="fullname">Rafael Landero Aligui</span>
+        <span>More arts coming soon!</span>
+        
+        <nav>
+            <ul>
+                <li id="containIcon"><!-- Social icons with Links-->
+                    <a href="https://www.youtube.com/@rafaelaligui3058">
+                        <img id="socialicons" src="./icons/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://www.facebook.com/RafaelL.AliguiDotaID414855942">
+                        <img id="socialicons" src="./icons/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.instagram.com/rafaelaligui187/">
+                        <img id="socialicons" src="./icons/instagram.png" alt="Instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a id="menutext" href="animatedart.html">Animated art</a>
+                </li>
+                <li>
+                    <a id="menutext" href="timelapseArt.html">Timelapse art</a>
+                </li>
+                <li>
+                    <a id="menutext" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="gallery">
+        <div class="gallery-item">
+            <img src=".//DigitalArts/BlueSky.jpg" alt="Blue Sky" class="art-image" data-date="August 9, 2023" data-description="A beautiful blue sky painting."/>
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Suburban.jpg" alt="Suburban" class="art-image" data-date="March 25, 2024" data-description="A serene suburban landscape."/>
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Stairs.jpg" alt="Stairs" class="art-image" data-date="August 16, 2023" data-description="An artistic interpretation of stairs."/>
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Suzume.jpg" alt="Suzume" class="art-image" data-date="July 3, 2023" data-description="Inspired by the film Suzume."/>
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Ocean.jpg" alt="Ocean" class="art-image" data-date="December 20, 2022" data-description="A vibrant ocean view."/>
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Magichour.PNG" alt="Magic hour" class="art-image" data-date="June 15, 2023" data-description="Capturing the magic hour."/>
+        </div>
+        <div class="gallery-item">
+            <img src=".//DigitalArts/Railway.jpg" alt="Railway" class="art-image" data-date="July 17, 2023" data-description="A nostalgic railway scene."/>
+        </div>
+    </div>
+
+    <!-- Modal to display large image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <button id="prevBtn" class="modal-button">&#10094;</button> <!-- Left Arrow -->
+        <button id="nextBtn" class="modal-button">&#10095;</button> <!-- Right Arrow -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

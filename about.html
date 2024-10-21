@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+     
+    <div id="sidebar">
+        <text id="webname">Rafa's Art</text>
+        <img id="profile" src=".//Rafael.jpg">
+        <text id="fullname">Rafael Landero Aligui</text>
+        
+        <nav>
+            <ul>
+                <li id="containIcon"><!-- Social icons with Links-->
+                    <a href="https://www.youtube.com/@rafaelaligui3058">
+                        <img id="socialicons" src="./icons/youtube.png">
+                    </a>
+                    <a href="https://www.facebook.com/RafaelL.AliguiDotaID414855942">
+                        <img id="socialicons" src="./icons/facebook.png"/>
+                    </a>
+                    <a href="https://www.instagram.com/rafaelaligui187/">
+                        <img id="socialicons" src="./icons/instagram.png"/>
+                    </a>
+                </li>
+                    <li>
+                        <a id="menutext"href="index.html">Art gallery</a>
+                    </li>
+                    
+                    
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="information">
+        <box id="infobox">"About the website: Welcome to my website! This is where I share my digital landscape art, inspired by my love for nature, anime, and creativity. Explore my latest artworks, and join me on my artistic journey as I continue to grow and experiment with new styles and techniques."</box>
+        <box id="infobox">"About the Artist: I'm "Rafael Aligui" from Cebu, Philippines, and I have a deep passion for music, video games, and digital landscape art. I also love animals and anime, which inspire much of my creative work."</box>
+        <box id="infobox">"Email me "aliguirafael@gmail.com"</box>
+    </div>
+
+    <!-- Modal to display large image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <button id="prevBtn" class="modal-button">&#10094;</button> <!-- Left Arrow -->
+        <button id="nextBtn" class="modal-button">&#10095;</button> <!-- Right Arrow -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
